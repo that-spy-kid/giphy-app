@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: #603bbb;
+  cursor: pointer;
+}
+
+.login-app {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 20px;
+  background: #fff;
+  display: flex;
+}
+
+.login-app .loginContainer-app {
+  padding: 60px;
+  margin: auto;
+  width: 100%;
+  max-width: 520px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgba(22, 24, 47, 1) 0%,
+    rgba(38, 20, 72, 0.9) 59%,
+    rgba(17, 27, 75, 0.9) 100%
+  );
+  box-shadow: 0 5px 70px -20px rgba(0, 0, 0, 0.8);
+}
+
+.login-app .loginContainer-app label {
+  color: white;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.login-app .loginContainer-app input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.login-app .loginContainer-app .btnContainer-app {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.login-app .loginContainer-app .btnContainer-app p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color: #fff;
+}
+
+.login-app .loginContainer-app .btnContainer-app p span {
+  color: yellow;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.login-app .loginContainer-app .btnContainer-app p span:hover {
+  color: red;
+}
+
+.login-app .loginContainer-app .errorMsg-text {
+  color: red;
+  font-size: 16px;
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgba(22, 24, 47, 1) 0%,
+    rgba(38, 20, 72, 0.9) 59%,
+    rgba(17, 27, 75, 0.9) 100%
+  );
+}
+
+.home nav {
+  background: #603bbb;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home nav h2 {
+  color: #fff;
+}
+
+.home nav button {
+  width: 86px;
+  padding: 8px 0;
+  background: #3a2b58;
+}
+
+.gifs {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gif {
+  padding: 0 2px;
+}
+
+.Loader {
+  color: white;
+}
+
+.error-pin {
+  margin: 30px 0px 50px 350px;
+  width: 50%;
+  text-align: center;
+}
+.m-2 {
+  margin-top: 300px;
+}
+
+.go {
+ 
+  width: 8%;
+  background-color: rgb(243, 24, 111);
+  border-color: rgb(243, 24, 111);
+}
+
+.paging{
+  margin-right: 40px;
+  margin-top: 0px;
+}

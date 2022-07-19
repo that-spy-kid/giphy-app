@@ -12,8 +12,6 @@ function App() {
    const [emailError, setEmailError] = useState('');
    const [passwordError, setPasswordError] = useState('');
    const [hasAccount, setHasAccount] = useState(false);
-   const [check,setCheck] = useState(true);
-
    
 const clearInputs = () => {
   setEmail('');
@@ -82,26 +80,15 @@ const clearErrors = () => {
       };
     });
   };
-  
- 
-  // Error occured here when page refresh !!
 
+  // Error occured here when page refresh
   useEffect(() => {
-     authListener();
+    authListener();
   }, []);
-
-  // if(user){
-  //   setCheck(true);
-  // }
-  // else{
-  //   setCheck(false)
-  // }
 
   
   return (
-    console.log(user),
     <div className='App'>
-   
     {user ? (
       <Home
      handleLogout={handleLogout}
@@ -118,7 +105,6 @@ const clearErrors = () => {
      setHasAccount={setHasAccount}
      emailError={emailError}
      passwordError={passwordError}
-     setCheck={setCheck}
       />
     )}
     </div>

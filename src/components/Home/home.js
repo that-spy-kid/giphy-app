@@ -11,7 +11,7 @@ const Home = (props) => {
     const [search, setSearch] = useState("");
 
     const [currentPage, setCurrentPage]= useState(1);
-    const [itemsPerPage, setItemsPerPage]=useState(10);
+    const [itemsPerPage]=useState(10);
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentItem = data.slice(indexOfFirstItem,indexOfLastItem);
@@ -54,7 +54,7 @@ const Home = (props) => {
     return currentItem.map(ele => {
         return (
             <div key={ele.id} className="gif">
-                <img src={ele.images.fixed_height.url} />
+                <img src={ele.images.fixed_height.url} alt="" />
             </div>
         )
     })

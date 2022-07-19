@@ -20,7 +20,7 @@ import React from 'react'
      { hasAccount ? (<h1 style={{color:"white",marginBottom:"10px", textAlign:"center"}}>Login Now</h1>):
       (<h1 style={{color:"white",marginBottom:"10px", textAlign:"center"}}>Register Now </h1>)
       }
-    
+        <form>
         <label>Username</label>
         <input 
         type="text"
@@ -52,6 +52,7 @@ import React from 'react'
             )
             }
         </div> 
+        </form>
      </div>
     </section>
   );

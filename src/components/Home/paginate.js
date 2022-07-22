@@ -21,7 +21,7 @@ export default function paginate(props) {
         classes += "active";
     }
     return (
-        <li className={classes} >
+        <li key={number.id} className={classes} >
             <a onClick={()=>props.pageSelected(number)} href='!#' className='page-link'>{number}</a>
         </li>
     )

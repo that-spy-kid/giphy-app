@@ -31,7 +31,6 @@ const Home = (props) => {
                        limit:100  
                     }
                 });
-                console.log(results);
                 setData(results.data.data);
             } catch (err){
                setIsError(true);
@@ -106,8 +105,6 @@ const Home = (props) => {
 
       const pageSelected = (pageNumber) => {
         setCurrentPage(pageNumber);
-
-
       }
 
 

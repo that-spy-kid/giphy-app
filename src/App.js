@@ -6,7 +6,7 @@ import Login from "./components/Auth/Login";
 import Home from "./components/Home/home";
 
 function App() {
-   const [user, setUser] = useState('');
+   const [hasUser, setHasUser] = useState('');
    const [email, setEmail] = useState('');
    const [password, setPassword] = useState('');
    const [emailError, setEmailError] = useState('');
@@ -70,13 +70,13 @@ const clearErrors = () => {
   const authListener = () => {
     fire
     .auth()
-    .onAuthStateChanged((user) => {
+    .onAuthStateChanged(user => {
       if(user){
         clearInputs();
-        setUser(user);
+        setHasUser(user);
       }
       else {
-        setUser("");
+        setHasUser("");
       };
     });
   };
@@ -84,12 +84,12 @@ const clearErrors = () => {
   // Error occured here when page refresh
   useEffect(() => {
     authListener();
-  }, []);
+  },[]);
 
   
   return (
     <div className='App'>
-    {user ? (
+    {hasUser ? (
       <Home
      handleLogout={handleLogout}
       />
